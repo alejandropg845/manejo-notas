@@ -1,0 +1,37 @@
+C:\Users\garri\Documents\C#\miAlegreInfancia\obj\Debug\miAlegreInfancia.csproj.AssemblyReference.cache
+C:\Users\garri\Documents\C#\miAlegreInfancia\obj\Debug\miAlegreInfancia.csproj.SuggestedBindingRedirects.cache
+C:\Users\garri\Documents\C#\miAlegreInfancia\obj\Debug\MainWindow.g.cs
+C:\Users\garri\Documents\C#\miAlegreInfancia\obj\Debug\pruebaUser.g.cs
+C:\Users\garri\Documents\C#\miAlegreInfancia\obj\Debug\App.g.cs
+C:\Users\garri\Documents\C#\miAlegreInfancia\obj\Debug\miAlegreInfancia_MarkupCompile.cache
+C:\Users\garri\Documents\C#\miAlegreInfancia\obj\Debug\miAlegreInfancia_MarkupCompile.lref
+C:\Users\garri\Documents\C#\miAlegreInfancia\bin\Debug\miAlegreInfancia.exe.config
+C:\Users\garri\Documents\C#\miAlegreInfancia\bin\Debug\miAlegreInfancia.exe
+C:\Users\garri\Documents\C#\miAlegreInfancia\bin\Debug\miAlegreInfancia.pdb
+C:\Users\garri\Documents\C#\miAlegreInfancia\obj\Debug\MainWindow.baml
+C:\Users\garri\Documents\C#\miAlegreInfancia\obj\Debug\pruebaUser.baml
+C:\Users\garri\Documents\C#\miAlegreInfancia\obj\Debug\miAlegreInfancia.g.resources
+C:\Users\garri\Documents\C#\miAlegreInfancia\obj\Debug\miAlegreInfancia.Properties.Resources.resources
+C:\Users\garri\Documents\C#\miAlegreInfancia\obj\Debug\miAlegreInfancia.csproj.GenerateResource.cache
+C:\Users\garri\Documents\C#\miAlegreInfancia\obj\Debug\miAlegreInfancia.csproj.CoreCompileInputs.cache
+C:\Users\garri\Documents\C#\miAlegreInfancia\obj\Debug\miAlegreInfancia.exe
+C:\Users\garri\Documents\C#\miAlegreInfancia\obj\Debug\miAlegreInfancia.pdb
+C:\Users\garri\Documents\C#\miAlegreInfancia\obj\Debug\miAlegreInfancia.csproj.ResolveComReference.cache
+C:\Users\Alejandro\Documents\Visual Studio 2022\Templates\ProjectTemplates\C#\miAlegreInfancia\bin\Debug\miAlegreInfancia.exe.config
+C:\Users\Alejandro\Documents\Visual Studio 2022\Templates\ProjectTemplates\C#\miAlegreInfancia\bin\Debug\miAlegreInfancia.exe
+C:\Users\Alejandro\Documents\Visual Studio 2022\Templates\ProjectTemplates\C#\miAlegreInfancia\bin\Debug\miAlegreInfancia.pdb
+C:\Users\Alejandro\Documents\Visual Studio 2022\Templates\ProjectTemplates\C#\miAlegreInfancia\obj\Debug\miAlegreInfancia.csproj.AssemblyReference.cache
+C:\Users\Alejandro\Documents\Visual Studio 2022\Templates\ProjectTemplates\C#\miAlegreInfancia\obj\Debug\miAlegreInfancia.csproj.ResolveComReference.cache
+C:\Users\Alejandro\Documents\Visual Studio 2022\Templates\ProjectTemplates\C#\miAlegreInfancia\obj\Debug\MainWindow.g.cs
+C:\Users\Alejandro\Documents\Visual Studio 2022\Templates\ProjectTemplates\C#\miAlegreInfancia\obj\Debug\pruebaUser.g.cs
+C:\Users\Alejandro\Documents\Visual Studio 2022\Templates\ProjectTemplates\C#\miAlegreInfancia\obj\Debug\App.g.cs
+C:\Users\Alejandro\Documents\Visual Studio 2022\Templates\ProjectTemplates\C#\miAlegreInfancia\obj\Debug\miAlegreInfancia_MarkupCompile.cache
+C:\Users\Alejandro\Documents\Visual Studio 2022\Templates\ProjectTemplates\C#\miAlegreInfancia\obj\Debug\miAlegreInfancia_MarkupCompile.lref
+C:\Users\Alejandro\Documents\Visual Studio 2022\Templates\ProjectTemplates\C#\miAlegreInfancia\obj\Debug\MainWindow.baml
+C:\Users\Alejandro\Documents\Visual Studio 2022\Templates\ProjectTemplates\C#\miAlegreInfancia\obj\Debug\pruebaUser.baml
+C:\Users\Alejandro\Documents\Visual Studio 2022\Templates\ProjectTemplates\C#\miAlegreInfancia\obj\Debug\miAlegreInfancia.g.resources
+C:\Users\Alejandro\Documents\Visual Studio 2022\Templates\ProjectTemplates\C#\miAlegreInfancia\obj\Debug\miAlegreInfancia.Properties.Resources.resources
+C:\Users\Alejandro\Documents\Visual Studio 2022\Templates\ProjectTemplates\C#\miAlegreInfancia\obj\Debug\miAlegreInfancia.csproj.GenerateResource.cache
+C:\Users\Alejandro\Documents\Visual Studio 2022\Templates\ProjectTemplates\C#\miAlegreInfancia\obj\Debug\miAlegreInfancia.csproj.CoreCompileInputs.cache
+C:\Users\Alejandro\Documents\Visual Studio 2022\Templates\ProjectTemplates\C#\miAlegreInfancia\obj\Debug\miAlegreInfancia.exe
+C:\Users\Alejandro\Documents\Visual Studio 2022\Templates\ProjectTemplates\C#\miAlegreInfancia\obj\Debug\miAlegreInfancia.pdb

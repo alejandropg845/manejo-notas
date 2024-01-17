@@ -1,0 +1,213 @@
+﻿<Window x:Class="miAlegreInfancia.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:miAlegreInfancia"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" ResizeMode="NoResize">
+    <Grid>
+        <TabControl>
+            <TabItem  Width="120" Header="Principal" FontWeight="ExtraBold" FontSize="20" Margin="-4,-5,4,5">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="14*"/>
+                        <ColumnDefinition Width="383*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image HorizontalAlignment="Left" Height="989" Margin="-92,-67,0,0" VerticalAlignment="Top" Width="1502" Source="/fondo.jpg" Grid.ColumnSpan="2"/>
+
+                    <Label FontWeight="Bold" Content="Bienvenid@ a Mi Alegre Infancia" HorizontalAlignment="Left" Margin="10,308,0,0" VerticalAlignment="Top" Width="756" FontSize="50" Height="87" Grid.Column="1" FontFamily="Palatino Linotype"/>
+
+                    <StackPanel Grid.ColumnSpan="2"/>
+                    <Image Margin="282,-56,10,87" Source="/miss.png" Stretch="Fill" Grid.Column="1"/>
+                    <Button BorderThickness="3" BorderBrush="Aqua" Background="DeepSkyBlue" x:Name="btn_archivo" IsEnabled="false" Content="Guardar .TXT" HorizontalAlignment="Left" Margin="190,282,0,0" VerticalAlignment="Top" Height="41" Width="158" Click="guardarArchivo" Grid.Column="1" FontFamily="Lucida Bright"/>
+                    <Button BorderThickness="3" BorderBrush="Red"  Foreground="Red" Grid.Column="1" Content="Reiniciar" HorizontalAlignment="Left" Margin="10,281,0,0" VerticalAlignment="Top" Height="42" Width="158" Click="boton_reiniciar" FontFamily="Cascadia Code SemiBold"/>
+                    <ComboBox SelectionChanged="combobox_SelectionChanged" Name="combobox" Grid.Column="1" HorizontalAlignment="Left" Margin="42,62,0,0" VerticalAlignment="Top" Width="240"/>
+
+                </Grid>
+
+            </TabItem>
+            <TabItem FontSize="18" FontWeight="DemiBold" Width="80" Header="Tarea" Margin="-4,-5,4,5" BorderThickness="2,2,2,2">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="175*"/>
+                        <ColumnDefinition Width="619*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBox HorizontalAlignment="Left" Margin="58,198,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="52" Height="27" Grid.Column="1"/>
+                    <Image Margin="-534,-255,-520,-193" Source="/fondo.jpg" Grid.ColumnSpan="2"/>
+                    <Label Content="Nombre" FontSize="30" HorizontalAlignment="Left" Margin="27,-1,0,0" VerticalAlignment="Top" Height="63" Width="152" FontWeight="DemiBold" Foreground="#FFFDFDFD" Grid.ColumnSpan="2"/>
+                    <TextBox BorderThickness="2" FontWeight="DemiBold" x:Name="txtNombre" HorizontalAlignment="Left" Margin="151,5,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="280" Height="37" BorderBrush="Black" Background="#FF16C177" FontSize="25" Grid.ColumnSpan="2"/>
+                    <Label Content="Corte 1" FontSize="30" HorizontalAlignment="Left" Margin="37,47,0,0" VerticalAlignment="Top" Width="176" FontWeight="DemiBold" Foreground="#FFFDFDFD" Grid.ColumnSpan="2"/>
+                    <TextBox x:Name="n1_tarea" HorizontalAlignment="Left" Margin="93,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="52" Height="27" BorderBrush="#FF010206" Background="#FF16C177" FontSize="20" FontWeight="Bold" BorderThickness="2,2,2,2"/>
+                    <Label Content="Nota 1" FontSize="15" HorizontalAlignment="Left" Margin="37,102,0,0" VerticalAlignment="Top" Width="56" Height="27" FontWeight="DemiBold" Foreground="#FFFDFDFD"/>
+                    <Label Content="Tarea" FontWeight="ExtraBold" FontSize="50" HorizontalAlignment="Left" Margin="295,-16,0,0" VerticalAlignment="Top" Height="83" Width="342" Grid.Column="1"/>
+                    <TextBox x:Name="n2_tarea" HorizontalAlignment="Left" Margin="93,148,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="52" Height="27" BorderBrush="#FF010206" Background="#FF16C177" FontSize="20" FontWeight="Bold" BorderThickness="2,2,2,2"/>
+                    <Label Content="Nota 2" FontSize="15" HorizontalAlignment="Left" Margin="37,149,0,0" VerticalAlignment="Top" Width="56" Height="27" FontWeight="DemiBold" Foreground="#FFFDFDFD"/>
+                    <TextBox x:Name="n3_tarea" HorizontalAlignment="Left" Margin="93,198,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="52" Height="27" BorderBrush="#FF010206" Background="#FF16C177" FontSize="20" FontWeight="Bold" BorderThickness="2,2,2,2"/>
+                    <Label Content="Nota 3" FontSize="15" HorizontalAlignment="Left" Margin="37,198,0,0" VerticalAlignment="Top" Width="56" Height="27" FontWeight="DemiBold" Foreground="#FFFDFDFD"/>
+                    <Label Content="Corte 2" FontSize="30" HorizontalAlignment="Left" Margin="2,47,0,0" VerticalAlignment="Top" Width="176" FontWeight="DemiBold" Foreground="#FFFDFDFD" Grid.Column="1"/>
+                    <TextBox x:Name="n5_tarea" HorizontalAlignment="Left" Margin="58,102,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="52" Height="27" BorderBrush="#FF010206" Background="#FF16C177" FontSize="20" FontWeight="Bold" BorderThickness="2,2,2,2" Grid.Column="1"/>
+                    <Label Content="Nota 1" FontSize="15" HorizontalAlignment="Left" Margin="2,102,0,0" VerticalAlignment="Top" Width="56" Height="27" FontWeight="DemiBold" Foreground="#FFFDFDFD" Grid.Column="1"/>
+                    <TextBox x:Name="n6_tarea" HorizontalAlignment="Left" Margin="58,148,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="52" Height="27" BorderBrush="#FF010206" Background="#FF16C177" FontSize="20" FontWeight="Bold" BorderThickness="2,2,2,2" Grid.Column="1"/>
+                    <Label Content="Nota 2" FontSize="15" HorizontalAlignment="Left" Margin="2,149,0,0" VerticalAlignment="Top" Width="56" Height="27" FontWeight="DemiBold" Foreground="#FFFDFDFD" Grid.Column="1"/>
+                    <TextBox x:Name="n7_tarea" HorizontalAlignment="Left" Margin="58,198,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="52" Height="27" BorderBrush="#FF010206" Background="#FF16C177" FontSize="20" FontWeight="Bold" BorderThickness="2,2,2,2" Grid.Column="1"/>
+                    <Label Content="Nota 3" FontSize="15" HorizontalAlignment="Left" Margin="2,198,0,0" VerticalAlignment="Top" Width="56" Height="27" FontWeight="DemiBold" Foreground="#FFFDFDFD" Grid.Column="1"/>
+                    <TextBox x:Name="n4_tarea" HorizontalAlignment="Left" Margin="93,245,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="52" Height="27" BorderBrush="#FF010206" Background="#FF16C177" FontSize="20" FontWeight="Bold" BorderThickness="2,2,2,2"/>
+                    <Label Content="Nota 4" FontSize="15" HorizontalAlignment="Left" Margin="37,245,0,0" VerticalAlignment="Top" Width="56" Height="27" FontWeight="DemiBold" Foreground="#FFFDFDFD"/>
+                    <TextBox x:Name="n8_tarea" HorizontalAlignment="Left" Margin="58,245,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="52" Height="27" BorderBrush="#FF010206" Background="#FF16C177" FontSize="20" FontWeight="Bold" BorderThickness="2,2,2,2" Grid.Column="1"/>
+                    <Label Content="Nota 4" FontSize="15" HorizontalAlignment="Left" Margin="2,245,0,0" VerticalAlignment="Top" Width="56" Height="27" FontWeight="DemiBold" Foreground="#FFFDFDFD" Grid.Column="1"/>
+                    <StackPanel Margin="-5,-67,-11,61" Grid.ColumnSpan="2">
+
+
+                    </StackPanel>
+                    <Label FontSize="20" FontWeight="Bold" Content="Suma de ambos (Nota Final):"  HorizontalAlignment="Left" Margin="27,322,0,0" VerticalAlignment="Top" Width="294" Height="43" Grid.ColumnSpan="2"/>
+                    <Image Margin="382,-49,3,283" Source="/tarea.png" Grid.Column="1"/>
+                    <Label Content="Promedio" FontSize="16" FontWeight="Bold" HorizontalAlignment="Left" Margin="5,286,0,0" VerticalAlignment="Top"/>
+                    <TextBox FontSize="20" FontWeight="Bold" BorderThickness="2,2,2,2" BorderBrush="DarkBlue" x:Name="corte1_tarea" HorizontalAlignment="Left" Margin="93,290,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="52" Height="27" IsEnabled="False" Background="White"/>
+                    <TextBox FontSize="20" FontWeight="Bold" BorderThickness="2,2,2,2" BorderBrush="DarkBlue" x:Name="corte2_tarea" HorizontalAlignment="Left" Margin="58,290,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="52" Height="27" IsEnabled="False" Background="White" Grid.Column="1"/>
+                    <Label x:Name="labelTarea" FontWeight="Bold" Foreground="WhiteSmoke" FontSize="50" Content="0" HorizontalAlignment="Left" Margin="146,299,0,0" VerticalAlignment="Top" Height="68" Width="136" Grid.Column="1"/>
+                    <Button  FontWeight="DemiBold" FontSize="20" BorderThickness="3" Cursor="Hand" BorderBrush="Gray" Content="Calcular" HorizontalAlignment="Left" Margin="164,0,0,0" VerticalAlignment="Center" Width="100" Click="Boton_Tarea" Height="50" Grid.Column="1"/>
+                    <ListBox BorderThickness="2" BorderBrush="black" Background="DarkGray" FontSize="12" FontWeight="SemiBold" Name="listaTarea" Margin="269,72,72,44" Grid.Column="1"/>
+
+                </Grid>
+            </TabItem>
+            <TabItem FontSize="18" FontWeight="DemiBold" Width="120" Header="Seguimiento" Margin="-4,-5,4,5">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="207*"/>
+                        <ColumnDefinition Width="587*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Margin="-556,-411,-629,-172" Source="/fondo.jpg" Grid.ColumnSpan="2" IsEnabled="False"/>
+                    <Label Content="Nombre" FontSize="30" HorizontalAlignment="Left" Margin="7,1,0,0" VerticalAlignment="Top" Height="63" Width="152" Foreground="#FFFFFCFC" FontWeight="DemiBold"/>
+
+                    <TextBox FontSize="25" x:Name="nombre_seguimiento" HorizontalAlignment="Left" Margin="130,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" Height="38" Background="#FF62E9F3" BorderBrush="Black" BorderThickness="2" Grid.ColumnSpan="2" FontWeight="DemiBold"/>
+                    <Label Content="Corte 1" FontSize="30" HorizontalAlignment="Left" Margin="55,53,0,0" VerticalAlignment="Top" Width="176" Grid.ColumnSpan="2" Foreground="#FFFFFCFC" FontWeight="DemiBold"/>
+                    <TextBox Background="#FF62E9F3" BorderBrush="Black" BorderThickness="2" x:Name="nota1_seguimiento" HorizontalAlignment="Left" Margin="110,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="52" Height="27" FontSize="20" FontWeight="Bold"/>
+                    <Label Content="Nota 1" FontSize="15" HorizontalAlignment="Left" Margin="54,104,0,0" VerticalAlignment="Top" Width="56" Height="27" Foreground="#FFFFFCFC" FontWeight="DemiBold"/>
+                    <Label Content="Seguimiento" FontWeight="ExtraBold" FontSize="50" HorizontalAlignment="Left" Margin="227,-19,0,0" VerticalAlignment="Top" Height="83" Width="340" Grid.Column="1"/>
+                    <TextBox Background="#FF62E9F3" BorderBrush="Black" BorderThickness="2" x:Name="nota2_seguimiento" HorizontalAlignment="Left" Margin="110,154,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="52" Height="27" FontSize="20" FontWeight="Bold"/>
+                    <Label Content="Nota 2" FontSize="15" HorizontalAlignment="Left" Margin="54,151,0,0" VerticalAlignment="Top" Width="56" Height="27" Foreground="#FFFFFCFC" FontWeight="DemiBold"/>
+                    <TextBox Background="#FF62E9F3" BorderBrush="Black" BorderThickness="2" x:Name="nota3_seguimiento" HorizontalAlignment="Left" Margin="110,204,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="52" Height="27" FontSize="20" FontWeight="Bold"/>
+                    <Label Content="Nota 3" FontSize="15" HorizontalAlignment="Left" Margin="54,200,0,0" VerticalAlignment="Top" Width="56" Height="27" Foreground="#FFFFFCFC" FontWeight="DemiBold"/>
+                    <Label Content="Corte 2" FontSize="30" HorizontalAlignment="Left" Margin="194,53,0,0" VerticalAlignment="Top" Width="176" Grid.ColumnSpan="2" Foreground="#FFFFFCFC" FontWeight="DemiBold"/>
+                    <TextBox Background="#FF62E9F3" BorderBrush="Black" BorderThickness="2" x:Name="nota5_seguimiento" HorizontalAlignment="Left" Margin="43,108,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="52" Height="27" Grid.Column="1" FontSize="20" FontWeight="Bold"/>
+                    <Label Content="Nota 1" FontSize="15" HorizontalAlignment="Left" Margin="194,104,0,0" VerticalAlignment="Top" Width="56" Height="27" Grid.ColumnSpan="2" Foreground="#FFFFFCFC" FontWeight="DemiBold"/>
+                    <TextBox Background="#FF62E9F3" BorderBrush="Black" BorderThickness="2" x:Name="nota6_seguimiento" HorizontalAlignment="Left" Margin="43,154,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="52" Height="27" Grid.Column="1" FontSize="20" FontWeight="Bold"/>
+                    <Label Content="Nota 2" FontSize="15" HorizontalAlignment="Left" Margin="194,151,0,0" VerticalAlignment="Top" Width="56" Height="27" Grid.ColumnSpan="2" Foreground="#FFFFFCFC" FontWeight="DemiBold"/>
+                    <TextBox Background="#FF62E9F3" BorderBrush="Black" BorderThickness="2" x:Name="nota7_seguimiento" HorizontalAlignment="Left" Margin="43,204,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="52" Height="27" Grid.Column="1" FontSize="20" FontWeight="Bold"/>
+                    <Label Content="Nota 3" FontSize="15" HorizontalAlignment="Left" Margin="194,200,0,0" VerticalAlignment="Top" Width="56" Height="27" Grid.ColumnSpan="2" Foreground="#FFFFFCFC" FontWeight="DemiBold"/>
+                    <TextBox Background="#FF62E9F3" BorderBrush="Black" BorderThickness="2" x:Name="nota4_seguimiento" HorizontalAlignment="Left" Margin="110,251,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="52" Height="27" FontSize="20" FontWeight="Bold"/>
+                    <Label Content="Nota 4" FontSize="15" HorizontalAlignment="Left" Margin="54,247,0,0" VerticalAlignment="Top" Width="56" Height="27" Foreground="#FFFFFCFC" FontWeight="DemiBold"/>
+                    <TextBox Background="#FF62E9F3" BorderBrush="Black" BorderThickness="2" x:Name="nota8_seguimiento" HorizontalAlignment="Left" Margin="43,251,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="52" Height="27" Grid.Column="1" FontSize="20" FontWeight="Bold"/>
+                    <Label Content="Nota 4" FontSize="15" HorizontalAlignment="Left" Margin="194,247,0,0" VerticalAlignment="Top" Width="56" Height="27" Grid.ColumnSpan="2" Foreground="#FFFFFCFC" FontWeight="DemiBold"/>
+
+
+                    <Image HorizontalAlignment="Left" Height="126" Margin="456,46,0,0" VerticalAlignment="Top" Width="122" Source="/seguimiento.png" Grid.Column="1"/>
+                    <Label FontSize="20" FontWeight="Bold" Content="Suma de ambos (Nota Final):"  HorizontalAlignment="Left" Margin="15,333,0,0" VerticalAlignment="Top" Width="292" Height="43" Grid.ColumnSpan="2"/>
+                    <Label x:Name="label_seguimiento" FontWeight="Bold" Foreground="WhiteSmoke" FontSize="50" Content="0" HorizontalAlignment="Left" Margin="95,307,0,0" VerticalAlignment="Top" Height="69" Width="136" Grid.Column="1"/>
+                    <Label Content="Promedio" FontSize="16" FontWeight="Bold" HorizontalAlignment="Left" Margin="12,292,0,0" VerticalAlignment="Top"/>
+                    <TextBox  BorderThickness="3" x:Name="c1_seguimiento" HorizontalAlignment="Left" Margin="110,294,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="52" Height="27" IsEnabled="False" BorderBrush="#FF101523"/>
+                    <TextBox  BorderThickness="3" x:Name="c2_seguimiento" HorizontalAlignment="Left" Margin="43,294,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="52" Height="27" IsEnabled="False" Grid.Column="1" BorderBrush="#FF101523"/>
+                    <ListBox BorderThickness="2" BorderBrush="black" Background="DarkGray" FontSize="12" FontWeight="SemiBold" x:Name="listaSeguimiento" Grid.Column="1" Margin="237,72,72,44"/>
+                    <Button FontWeight="DemiBold" FontSize="20" BorderThickness="3" Cursor="Hand" BorderBrush="Gray" Grid.Column="1" Content="Calcular"  HorizontalAlignment="Left" Margin="131,168,0,0" VerticalAlignment="Top" Height="50" Width="96" Click="Boton_Seguimiento"/>
+
+
+
+                </Grid>
+            </TabItem>
+
+            <TabItem FontSize="18" FontWeight="DemiBold" Width="120" Header="Exámenes" Margin="-4,-5,4,5">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0*"/>
+                        <ColumnDefinition Width="109*"/>
+                        <ColumnDefinition Width="139*"/>
+                        <ColumnDefinition Width="546*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Margin="-527,-268,-527,-180" Source="/fondo.jpg" Grid.ColumnSpan="4"/>
+                    <Label Foreground="White" FontWeight="DemiBold" Content="Nombre" FontSize="30" HorizontalAlignment="Left" Margin="32,10,0,0" VerticalAlignment="Top" Height="63" Width="152" Grid.ColumnSpan="3"/>
+                    <TextBox FontWeight="DemiBold" FontSize="25" x:Name="nombre_examenes" HorizontalAlignment="Left" Margin="50,20,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="280" Height="37" Grid.Column="2" BorderBrush="Black" BorderThickness="2,2,2,2" Grid.ColumnSpan="2"/>
+                    <Label FontWeight="DemiBold" Foreground="White" Content="Corte 1" FontSize="30" HorizontalAlignment="Left" Margin="44,62,0,0" VerticalAlignment="Top" Width="176" Grid.ColumnSpan="3"/>
+                    <TextBox FontWeight="DemiBold" FontSize="20" x:Name="nota1_examenes" HorizontalAlignment="Left" Margin="100,117,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="52" Height="27" Background="#FF11EF8F" Grid.ColumnSpan="3" BorderThickness="2,2,2,2" BorderBrush="Black"/>
+                    <Label FontWeight="DemiBold" Content="Nota 1" Foreground="White" FontSize="15" HorizontalAlignment="Left" Margin="40,120,0,0" VerticalAlignment="Top" Width="56" Height="27" Grid.ColumnSpan="2"/>
+                    <Label Content="Examenes" FontWeight="ExtraBold" FontSize="50" HorizontalAlignment="Left" Margin="204,-20,0,0" VerticalAlignment="Top" Height="83" Width="340" Grid.Column="3"/>
+                    <Label FontWeight="DemiBold" Content="Corte 2" FontSize="30" Foreground="White" HorizontalAlignment="Left" Margin="75,62,0,0" VerticalAlignment="Top" Width="176" Grid.Column="2" Grid.ColumnSpan="2"/>
+                    <TextBox FontWeight="DemiBold" FontSize="20" x:Name="nota2_examenes" HorizontalAlignment="Left" Margin="131,117,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="52" Height="27" Background="#FF11EF8F" Grid.Column="2" BorderThickness="2,2,2,2" BorderBrush="Black" Grid.ColumnSpan="2"/>
+                    <Label FontWeight="DemiBold" Content="Nota 1" FontSize="15" Foreground="White" HorizontalAlignment="Left" Margin="71,120,0,0" VerticalAlignment="Top" Width="56" Height="27" Grid.Column="2"/>
+                    <Label FontSize="20" FontWeight="Bold" Content="Suma de ambos (Nota Final):"  HorizontalAlignment="Left" Margin="6,222,0,0" VerticalAlignment="Top" Width="293" Height="43" Grid.ColumnSpan="4"/>
+                    <Label Content="Promedio" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,156,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+                    <TextBox x:Name="c1_examenes" HorizontalAlignment="Left" Margin="100,158,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="52" Height="27" IsEnabled="False" Grid.ColumnSpan="3" BorderThickness="2,2,2,2" BorderBrush="Black"/>
+                    <TextBox x:Name="c2_examenes" HorizontalAlignment="Left" Margin="131,158,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="52" Height="27" IsEnabled="False" Grid.Column="2" BorderThickness="2,2,2,2" BorderBrush="Black" Grid.ColumnSpan="2"/>
+                    <Label x:Name="label_examenes" FontWeight="Bold" Foreground="WhiteSmoke" FontSize="50" Content="0" HorizontalAlignment="Left" Margin="46,199,0,0" VerticalAlignment="Top" Height="68" Width="136" Grid.Column="3"/>
+                    <Image HorizontalAlignment="Left" Height="99" Margin="421,47,0,0" VerticalAlignment="Top" Width="123" Source="/examen.png" Grid.Column="3"/>
+                    <TextBlock Text="Secciones" FontSize="30" Margin="2,-52,-18,446" Grid.ColumnSpan="4"/>
+                    <ListBox BorderThickness="2" BorderBrush="black" Background="DarkGray" FontSize="12" FontWeight="SemiBold" x:Name="lista_examenes"  Margin="204,72,68,55" Grid.Column="3">
+                    </ListBox>
+
+
+
+
+                    <Button Name="btn_calcular" FontWeight="DemiBold" FontSize="20" BorderThickness="3" Cursor="Hand" BorderBrush="Gray" Content="Calcular" HorizontalAlignment="Left" Margin="86,163,0,0" VerticalAlignment="Top" Height="54" Width="96" Click="Boton_Examenes" Grid.Column="3"/>
+
+                </Grid>
+            </TabItem>
+
+            <TabItem FontSize="18" FontWeight="DemiBold" Width="120" Header="Actitudinal" Margin="-4,-5,4,5">
+                <Grid>
+                    <Image Margin="-517,-326,-603,-176" Source="/fondo.jpg"/>
+                    <Label Foreground="white" Content="Nombre" FontSize="30" HorizontalAlignment="Left" Margin="42,5,0,0" VerticalAlignment="Top" Height="63" Width="152" FontWeight="SemiBold"/>
+
+                    <TextBox FontWeight="DemiBold" FontSize="25" x:Name="nombre_actitudinal" HorizontalAlignment="Left" Margin="169,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="280" Height="36" Background="#FF8CABF7" BorderThickness="2,2,2,2" BorderBrush="Black"/>
+                    <Label Foreground="White" Content="Corte 1" FontSize="30" HorizontalAlignment="Left" Margin="84,58,0,0" VerticalAlignment="Top" Width="176" FontWeight="SemiBold"/>
+                    <TextBox x:Name="nota1_actitudinal" HorizontalAlignment="Left" Margin="110,113,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="52" Height="27" FontSize="20" FontWeight="Bold" Background="#FF8CABF7" BorderThickness="2,2,2,2" BorderBrush="Black"/>
+                    <Label Foreground="White" Content="Nota 1" FontSize="15" HorizontalAlignment="Left" Margin="54,109,0,0" VerticalAlignment="Top" Width="56" Height="27" FontWeight="SemiBold"/>
+                    <Label Content="Actitudinal" FontWeight="ExtraBold" FontSize="50" HorizontalAlignment="Left" Margin="454,-14,0,0" VerticalAlignment="Top" Height="82" Width="341"/>
+                    <TextBox x:Name="nota2_actitudinal" HorizontalAlignment="Left" Margin="110,158,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="52" Height="28" FontSize="20" FontWeight="Bold" Background="#FF8CABF7" BorderThickness="2,2,2,2" BorderBrush="Black"/>
+                    <Label Foreground="White" Content="Nota 2" FontSize="15" HorizontalAlignment="Left" Margin="54,156,0,0" VerticalAlignment="Top" Width="56" Height="26" FontWeight="SemiBold"/>
+                    <Label Foreground="White" Content="Corte 2" FontSize="30" HorizontalAlignment="Left" Margin="222,58,0,0" VerticalAlignment="Top" Width="176" FontWeight="SemiBold"/>
+                    <TextBox x:Name="nota3_actitudinal" HorizontalAlignment="Left" Margin="250,113,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="52" Height="27" FontSize="20" FontWeight="Bold" Background="#FF8CABF7" BorderThickness="2,2,2,2" BorderBrush="Black"/>
+                    <Label Content="Nota 1" Foreground="White" FontSize="15" HorizontalAlignment="Left" Margin="194,109,0,0" VerticalAlignment="Top" Width="56" Height="27" FontWeight="SemiBold"/>
+                    <TextBox x:Name="nota4_actitudinal" HorizontalAlignment="Left" Margin="250,158,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="52" Height="28" FontSize="20" FontWeight="Bold" Background="#FF8CABF7" BorderThickness="2,2,2,2" BorderBrush="Black"/>
+                    <Label Content="Nota 2" FontSize="15" Foreground="White" HorizontalAlignment="Left" Margin="194,156,0,0" VerticalAlignment="Top" Width="56" Height="26" FontWeight="SemiBold"/>
+                    <Label FontSize="20" FontWeight="Bold" Content="Suma de ambos (Nota Final):"  HorizontalAlignment="Left" Margin="17,253,0,0" VerticalAlignment="Top" Width="292" Height="43"/>
+                    <Label x:Name="label_actitudinal" FontWeight="Bold" Foreground="WhiteSmoke" FontSize="50" Content="0" HorizontalAlignment="Left" Margin="315,227,0,0" VerticalAlignment="Top" Height="69" Width="136"/>
+                    <Label Content="Promedio" FontSize="16" FontWeight="Bold" HorizontalAlignment="Left" Margin="12,201,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="c1_actitudinal" HorizontalAlignment="Left" Margin="110,203,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="52" Height="27" IsEnabled="False" FontWeight="Bold" FontSize="20" BorderThickness="2,2,2,2" BorderBrush="#FF0933B3"/>
+                    <TextBox x:Name="c2_actitudinal" HorizontalAlignment="Left" Margin="250,203,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="52" Height="27" IsEnabled="False" FontWeight="Bold" FontSize="20" BorderThickness="2,2,2,2" BorderBrush="#FF0933B3"/>
+                    <Image HorizontalAlignment="Left" Height="125" Margin="701,30,0,0" VerticalAlignment="Top" Width="138" Source="/actitudinal.png"/>
+                    <TextBlock Text="Secciones" FontSize="30" Margin="12,-56,-28,450"/>
+                    <ListBox BorderThickness="2" BorderBrush="black" Background="DarkGray" FontSize="12" FontWeight="SemiBold" Name="listaActitudinal" Margin="445,72,84,60"/>
+                    <Button FontWeight="DemiBold" FontSize="20" BorderThickness="3" Cursor="Hand" BorderBrush="Gray" Content="Calcular" HorizontalAlignment="Left" Margin="334,166,0,0" VerticalAlignment="Top" Height="51" Width="98" Click="Boton_Actitudinal"/>
+                </Grid>
+            </TabItem>
+            <TabItem FontSize="18" FontWeight="DemiBold" Width="120" Header="Cuaderno" Margin="-6,-7,2,5">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="151*"/>
+                        <ColumnDefinition Width="246*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Margin="-529,-216,-525,-232" Source="/fondo.jpg" Grid.ColumnSpan="2"/>
+                    <Label Foreground="White" FontWeight="SemiBold" Content="Nombre" FontSize="30" HorizontalAlignment="Left" Margin="28,24,0,0" VerticalAlignment="Top" Height="62" Width="152"/>
+                    <TextBox FontSize="25" FontWeight="DemiBold" x:Name="nombre_cuaderno" HorizontalAlignment="Left" Margin="151,33,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="280" Height="37" Background="#FFE69D1A" Grid.ColumnSpan="2" BorderBrush="Black" BorderThickness="2,2,2,2"/>
+                    <Label Foreground="White" FontWeight="SemiBold" Content="Corte 1" FontSize="30" HorizontalAlignment="Left" Margin="58,100,0,0" VerticalAlignment="Top" Width="176"/>
+                    <TextBox FontSize="20" FontWeight="DemiBold" x:Name="nota1_cuaderno" HorizontalAlignment="Left" Margin="114,155,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="52" Height="27" Background="#FFE69D1A" BorderBrush="Black" BorderThickness="2,2,2,2"/>
+                    <Label Content="Nota 1" FontSize="15" Foreground="White" FontWeight="SemiBold" HorizontalAlignment="Left" Margin="58,151,0,0" VerticalAlignment="Top" Width="56" Height="27"/>
+                    <Label Content="Corte 2" FontSize="30" HorizontalAlignment="Left" Foreground="White" FontWeight="SemiBold" Margin="198,100,0,0" VerticalAlignment="Top" Width="176" Grid.ColumnSpan="2"/>
+                    <TextBox FontSize="20" FontWeight="DemiBold" x:Name="nota2_cuaderno" HorizontalAlignment="Left" Margin="254,155,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="52" Height="27" Background="#FFE69D1A" Grid.ColumnSpan="2" BorderBrush="Black" BorderThickness="2,2,2,2"/>
+                    <Label Content="Nota 1" FontSize="15" HorizontalAlignment="Left" Margin="198,151,0,0" Foreground="White" FontWeight="SemiBold" VerticalAlignment="Top" Width="56" Height="27"/>
+                    <Label FontSize="20" FontWeight="Bold" Content="Suma de ambos (Nota Final):"  HorizontalAlignment="Left" Margin="26,259,0,0" VerticalAlignment="Top" Width="280" Height="44" Grid.ColumnSpan="2"/>
+                    <Label Content="Promedio" FontSize="16" FontWeight="Bold" HorizontalAlignment="Left" Margin="16,190,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="c1_cuaderno" FontSize="20" FontWeight="DemiBold" HorizontalAlignment="Left" Margin="114,192,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="52" Height="27" IsEnabled="False" BorderBrush="Black" BorderThickness="2,2,2,2"/>
+                    <TextBox x:Name="c2_cuaderno" HorizontalAlignment="Left" FontSize="20" FontWeight="DemiBold" Margin="254,192,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="52" Height="27" IsEnabled="False" Grid.ColumnSpan="2" BorderBrush="Black" BorderThickness="2,2,2,2"/>
+                    <Image HorizontalAlignment="Left" Height="141" Margin="341,0,0,0" VerticalAlignment="Top" Width="148" Source="/cuaderno.png" Grid.Column="1"/>
+                    <Label x:Name="label_cuaderno" FontWeight="Bold" Foreground="WhiteSmoke" FontSize="50" Content="0" HorizontalAlignment="Left" Margin="4,234,0,0" VerticalAlignment="Top" Height="69" Width="136" Grid.Column="1"/>
+                    <ListBox BorderThickness="2" BorderBrush="black" Background="DarkGray" FontSize="12" FontWeight="SemiBold" Name="listaCuaderno" Margin="151,72,80,54" Grid.Column="1"/>
+                    <Label Content="Cuaderno" FontWeight="ExtraBold" FontSize="50" HorizontalAlignment="Left" Margin="151,-16,0,0" VerticalAlignment="Top" Height="83" Width="341" Grid.Column="1"/>
+                    <Button FontWeight="DemiBold" FontSize="20" BorderThickness="3" Cursor="Hand" BorderBrush="Gray" Content="Calcular" HorizontalAlignment="Left" Margin="44,0,0,0" VerticalAlignment="Center" Height="52" Width="91" Click="Boton_Cuaderno" Grid.Column="1"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+
+    </Grid>
+</Window>
